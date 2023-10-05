@@ -3,7 +3,6 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-//import io.appium.java_client.remote.AutomationName;
 import java.net.URI;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +11,6 @@ public class CalculatorTest {
 
     public static void main(String[] args) {
         try {
-            // Set up the desired capabilities
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability(MobileCapabilityType.DEVICE_NAME, "redmi");
             caps.setCapability(MobileCapabilityType.UDID, "2a79980a9907");
@@ -31,13 +29,11 @@ public class CalculatorTest {
 
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-            // Open the app
             driver.launchApp();
 
             System.out.println("Application started");
 
-            // Close the app when done
-//            driver.closeApp();
+            driver.closeApp();
         } catch (Exception e) {
             e.printStackTrace();
         }
