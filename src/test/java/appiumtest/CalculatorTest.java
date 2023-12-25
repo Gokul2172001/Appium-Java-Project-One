@@ -16,7 +16,7 @@ public class CalculatorTest {
             caps.setCapability(MobileCapabilityType.UDID, "2a79980a9907");
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
-            caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.miui.calculator");
+            caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.ads.fettello");
             caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.miui.calculator.cal.CalculatorActivity");
             
             caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60000); // Replace 
@@ -32,6 +32,9 @@ public class CalculatorTest {
             driver.launchApp();
 
             System.out.println("Application started");
+
+            WebDriver GetStarted = driver.findElement(By.id)
+                GetStarted.click();
 
             driver.closeApp();
         } catch (Exception e) {
