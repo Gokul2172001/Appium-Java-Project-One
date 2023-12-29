@@ -37,6 +37,7 @@ public class CalculatorTest {
                 GetStarted.click();
 
             driver.closeApp();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
