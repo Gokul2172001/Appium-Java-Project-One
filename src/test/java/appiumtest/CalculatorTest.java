@@ -39,7 +39,10 @@ public class CalculatorTest {
             driver.closeApp();
             
         } catch (Exception e) {
+            
             e.printStackTrace();
+            
         }
     }
 }
+
