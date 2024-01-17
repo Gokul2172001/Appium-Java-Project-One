@@ -21,21 +21,15 @@ public class CalculatorTest {
             
             caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60000); // Replace 
 
-
             URI uri = new URI("http://127.0.0.1:4723/wd/hub");
             URL url = uri.toURL();
 
             AndroidDriver<AndroidElement> driver = new AndroidDriver<>(url, caps);
-
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
             driver.launchApp();
-
             System.out.println("Application started");
-
             WebDriver GetStarted = driver.findElement(By.id)
                 GetStarted.click();
-
             driver.closeApp();
             
         } catch (Exception e) {
@@ -45,4 +39,3 @@ public class CalculatorTest {
         }
     }
 }
-
